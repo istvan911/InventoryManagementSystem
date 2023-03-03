@@ -180,7 +180,7 @@
             this.btnCostumers.Name = "btnCostumers";
             this.btnCostumers.Size = new System.Drawing.Size(250, 75);
             this.btnCostumers.TabIndex = 17;
-            this.btnCostumers.Text = "Costumers";
+            this.btnCostumers.Text = "Customers";
             this.btnCostumers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCostumers.UseVisualStyleBackColor = true;
             this.btnCostumers.Click += new System.EventHandler(this.btnCostumers_Click);

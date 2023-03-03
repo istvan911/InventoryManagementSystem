@@ -22,5 +22,25 @@ namespace InventoryManagementSystem.Forms
         {
             InitializeComponent();
         }
+
+        private void DGV_Frissit()
+        {
+            DGVCustomer.DataSource = AB.Customers.ToList();
+            DGVProduct.DataSource = AB.Products.ToList();
+            DGVOrder.DataSource = AB.Orders.ToList();
+        }
+
+        private void btnInsertOrder_Click(object sender, EventArgs e)
+        {
+            DGV_Frissit();
+        }
+
+        private void FormOrders_Load(object sender, EventArgs e)
+        {
+            DGV_Frissit();
+            DGVProduct.ForeColor = Color.Black;
+            DGVOrder.ForeColor = Color.Black;
+            DGVCustomer.ForeColor = Color.Black;
+        }
     }
 }

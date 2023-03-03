@@ -28,23 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlp1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlp2 = new System.Windows.Forms.TableLayoutPanel();
             this.DGVProduct = new System.Windows.Forms.DataGridView();
-            this.ProductId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProdDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductCategorie = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DGVCustomer = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.DTGOrder = new System.Windows.Forms.DataGridView();
-            this.OrderId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Product = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Unitprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DGVOrder = new System.Windows.Forms.DataGridView();
             this.tlp4 = new System.Windows.Forms.TableLayoutPanel();
             this.txtCustName = new System.Windows.Forms.TextBox();
             this.txtCustId = new System.Windows.Forms.TextBox();
@@ -56,63 +45,54 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnInsertOrder = new System.Windows.Forms.Button();
             this.txtOrderQuantity = new System.Windows.Forms.TextBox();
-            this.CustId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CustName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CustEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CustPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.tlp1.SuspendLayout();
+            this.tlp2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVCustomer)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DTGOrder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVOrder)).BeginInit();
             this.tlp4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // tlp1
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1012, 623);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tlp1.ColumnCount = 1;
+            this.tlp1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlp1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlp1.Controls.Add(this.tlp2, 0, 0);
+            this.tlp1.Controls.Add(this.tableLayoutPanel3, 0, 1);
+            this.tlp1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlp1.Location = new System.Drawing.Point(0, 0);
+            this.tlp1.Name = "tlp1";
+            this.tlp1.RowCount = 2;
+            this.tlp1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlp1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlp1.Size = new System.Drawing.Size(1012, 623);
+            this.tlp1.TabIndex = 0;
             // 
-            // tableLayoutPanel2
+            // tlp2
             // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.DGVProduct, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.DGVCustomer, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1006, 305);
-            this.tableLayoutPanel2.TabIndex = 0;
+            this.tlp2.ColumnCount = 2;
+            this.tlp2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlp2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlp2.Controls.Add(this.DGVProduct, 0, 0);
+            this.tlp2.Controls.Add(this.DGVCustomer, 0, 0);
+            this.tlp2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlp2.Location = new System.Drawing.Point(3, 3);
+            this.tlp2.Name = "tlp2";
+            this.tlp2.RowCount = 1;
+            this.tlp2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlp2.Size = new System.Drawing.Size(1006, 305);
+            this.tlp2.TabIndex = 0;
             // 
             // DGVProduct
             // 
             this.DGVProduct.AllowUserToOrderColumns = true;
             this.DGVProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGVProduct.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(70)))));
             this.DGVProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ProductId,
-            this.ProductName,
-            this.ProductQuantity,
-            this.ProductPrice,
-            this.ProdDesc,
-            this.ProductCategorie});
             this.DGVProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DGVProduct.GridColor = System.Drawing.Color.White;
             this.DGVProduct.Location = new System.Drawing.Point(506, 3);
             this.DGVProduct.Name = "DGVProduct";
             this.DGVProduct.RowHeadersWidth = 51;
@@ -120,53 +100,14 @@
             this.DGVProduct.Size = new System.Drawing.Size(497, 299);
             this.DGVProduct.TabIndex = 19;
             // 
-            // ProductId
-            // 
-            this.ProductId.HeaderText = "Product id";
-            this.ProductId.MinimumWidth = 6;
-            this.ProductId.Name = "ProductId";
-            // 
-            // ProductName
-            // 
-            this.ProductName.HeaderText = "Product name";
-            this.ProductName.MinimumWidth = 6;
-            this.ProductName.Name = "ProductName";
-            // 
-            // ProductQuantity
-            // 
-            this.ProductQuantity.HeaderText = "Product quantity";
-            this.ProductQuantity.MinimumWidth = 6;
-            this.ProductQuantity.Name = "ProductQuantity";
-            // 
-            // ProductPrice
-            // 
-            this.ProductPrice.HeaderText = "Product price";
-            this.ProductPrice.MinimumWidth = 6;
-            this.ProductPrice.Name = "ProductPrice";
-            // 
-            // ProdDesc
-            // 
-            this.ProdDesc.HeaderText = "Product description";
-            this.ProdDesc.MinimumWidth = 6;
-            this.ProdDesc.Name = "ProdDesc";
-            // 
-            // ProductCategorie
-            // 
-            this.ProductCategorie.HeaderText = "Product categorie";
-            this.ProductCategorie.MinimumWidth = 6;
-            this.ProductCategorie.Name = "ProductCategorie";
-            // 
             // DGVCustomer
             // 
             this.DGVCustomer.AllowUserToOrderColumns = true;
             this.DGVCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGVCustomer.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(70)))));
             this.DGVCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CustId,
-            this.CustName,
-            this.CustEmail,
-            this.CustPhone});
             this.DGVCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DGVCustomer.GridColor = System.Drawing.Color.White;
             this.DGVCustomer.Location = new System.Drawing.Point(3, 3);
             this.DGVCustomer.Name = "DGVCustomer";
             this.DGVCustomer.RowHeadersWidth = 51;
@@ -179,7 +120,7 @@
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel3.Controls.Add(this.DTGOrder, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.DGVOrder, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.tlp4, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 314);
@@ -189,54 +130,20 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1006, 306);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
-            // DTGOrder
+            // DGVOrder
             // 
-            this.DTGOrder.AllowUserToOrderColumns = true;
-            this.DTGOrder.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DTGOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DTGOrder.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.OrderId,
-            this.Product,
-            this.Quantity,
-            this.Unitprice,
-            this.TotPrice});
-            this.DTGOrder.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DTGOrder.Location = new System.Drawing.Point(405, 3);
-            this.DTGOrder.Name = "DTGOrder";
-            this.DTGOrder.RowHeadersWidth = 51;
-            this.DTGOrder.RowTemplate.Height = 29;
-            this.DTGOrder.Size = new System.Drawing.Size(598, 300);
-            this.DTGOrder.TabIndex = 20;
-            // 
-            // OrderId
-            // 
-            this.OrderId.HeaderText = "Order id";
-            this.OrderId.MinimumWidth = 6;
-            this.OrderId.Name = "OrderId";
-            // 
-            // Product
-            // 
-            this.Product.HeaderText = "Product";
-            this.Product.MinimumWidth = 6;
-            this.Product.Name = "Product";
-            // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.MinimumWidth = 6;
-            this.Quantity.Name = "Quantity";
-            // 
-            // Unitprice
-            // 
-            this.Unitprice.HeaderText = "Unit price";
-            this.Unitprice.MinimumWidth = 6;
-            this.Unitprice.Name = "Unitprice";
-            // 
-            // TotPrice
-            // 
-            this.TotPrice.HeaderText = "Total Price";
-            this.TotPrice.MinimumWidth = 6;
-            this.TotPrice.Name = "TotPrice";
+            this.DGVOrder.AllowUserToOrderColumns = true;
+            this.DGVOrder.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGVOrder.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(70)))));
+            this.DGVOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVOrder.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DGVOrder.GridColor = System.Drawing.Color.White;
+            this.DGVOrder.Location = new System.Drawing.Point(405, 3);
+            this.DGVOrder.Name = "DGVOrder";
+            this.DGVOrder.RowHeadersWidth = 51;
+            this.DGVOrder.RowTemplate.Height = 29;
+            this.DGVOrder.Size = new System.Drawing.Size(598, 300);
+            this.DGVOrder.TabIndex = 20;
             // 
             // tlp4
             // 
@@ -257,12 +164,12 @@
             this.tlp4.Location = new System.Drawing.Point(3, 3);
             this.tlp4.Name = "tlp4";
             this.tlp4.RowCount = 5;
-            this.tlp4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlp4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlp4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlp4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlp4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlp4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlp4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tlp4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tlp4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tlp4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tlp4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tlp4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tlp4.Size = new System.Drawing.Size(396, 300);
             this.tlp4.TabIndex = 0;
             // 
@@ -272,11 +179,11 @@
             this.txtCustName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtCustName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtCustName.ForeColor = System.Drawing.Color.White;
-            this.txtCustName.Location = new System.Drawing.Point(201, 123);
+            this.txtCustName.Location = new System.Drawing.Point(201, 83);
             this.txtCustName.MaxLength = 32764;
             this.txtCustName.Multiline = true;
             this.txtCustName.Name = "txtCustName";
-            this.txtCustName.Size = new System.Drawing.Size(192, 54);
+            this.txtCustName.Size = new System.Drawing.Size(192, 34);
             this.txtCustName.TabIndex = 83;
             // 
             // txtCustId
@@ -285,11 +192,11 @@
             this.txtCustId.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtCustId.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtCustId.ForeColor = System.Drawing.Color.White;
-            this.txtCustId.Location = new System.Drawing.Point(201, 63);
+            this.txtCustId.Location = new System.Drawing.Point(201, 43);
             this.txtCustId.MaxLength = 32764;
             this.txtCustId.Multiline = true;
             this.txtCustId.Name = "txtCustId";
-            this.txtCustId.Size = new System.Drawing.Size(192, 54);
+            this.txtCustId.Size = new System.Drawing.Size(192, 34);
             this.txtCustId.TabIndex = 82;
             // 
             // lbl3
@@ -300,7 +207,7 @@
             this.lbl3.ForeColor = System.Drawing.Color.White;
             this.lbl3.Location = new System.Drawing.Point(3, 0);
             this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(192, 60);
+            this.lbl3.Size = new System.Drawing.Size(192, 40);
             this.lbl3.TabIndex = 75;
             this.lbl3.Text = "Order date:";
             this.lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -311,9 +218,9 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 60);
+            this.label1.Location = new System.Drawing.Point(3, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 60);
+            this.label1.Size = new System.Drawing.Size(192, 40);
             this.label1.TabIndex = 76;
             this.label1.Text = "Customer id:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -324,9 +231,9 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(3, 120);
+            this.label2.Location = new System.Drawing.Point(3, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(192, 60);
+            this.label2.Size = new System.Drawing.Size(192, 40);
             this.label2.TabIndex = 77;
             this.label2.Text = "Customer name:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -347,9 +254,9 @@
             this.btnViewOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewOrders.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnViewOrders.ForeColor = System.Drawing.Color.White;
-            this.btnViewOrders.Location = new System.Drawing.Point(201, 243);
+            this.btnViewOrders.Location = new System.Drawing.Point(201, 163);
             this.btnViewOrders.Name = "btnViewOrders";
-            this.btnViewOrders.Size = new System.Drawing.Size(192, 54);
+            this.btnViewOrders.Size = new System.Drawing.Size(192, 134);
             this.btnViewOrders.TabIndex = 85;
             this.btnViewOrders.Text = "View Orders";
             this.btnViewOrders.UseVisualStyleBackColor = true;
@@ -360,9 +267,9 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(3, 180);
+            this.label3.Location = new System.Drawing.Point(3, 120);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 60);
+            this.label3.Size = new System.Drawing.Size(192, 40);
             this.label3.TabIndex = 86;
             this.label3.Text = "Product quantity:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -373,12 +280,13 @@
             this.btnInsertOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsertOrder.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnInsertOrder.ForeColor = System.Drawing.Color.White;
-            this.btnInsertOrder.Location = new System.Drawing.Point(3, 243);
+            this.btnInsertOrder.Location = new System.Drawing.Point(3, 163);
             this.btnInsertOrder.Name = "btnInsertOrder";
-            this.btnInsertOrder.Size = new System.Drawing.Size(192, 54);
+            this.btnInsertOrder.Size = new System.Drawing.Size(192, 134);
             this.btnInsertOrder.TabIndex = 84;
             this.btnInsertOrder.Text = "Insert Order";
             this.btnInsertOrder.UseVisualStyleBackColor = true;
+            this.btnInsertOrder.Click += new System.EventHandler(this.btnInsertOrder_Click);
             // 
             // txtOrderQuantity
             // 
@@ -386,36 +294,12 @@
             this.txtOrderQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtOrderQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtOrderQuantity.ForeColor = System.Drawing.Color.White;
-            this.txtOrderQuantity.Location = new System.Drawing.Point(201, 183);
+            this.txtOrderQuantity.Location = new System.Drawing.Point(201, 123);
             this.txtOrderQuantity.MaxLength = 32764;
             this.txtOrderQuantity.Multiline = true;
             this.txtOrderQuantity.Name = "txtOrderQuantity";
-            this.txtOrderQuantity.Size = new System.Drawing.Size(192, 54);
+            this.txtOrderQuantity.Size = new System.Drawing.Size(192, 34);
             this.txtOrderQuantity.TabIndex = 87;
-            // 
-            // CustId
-            // 
-            this.CustId.HeaderText = "Customer id";
-            this.CustId.MinimumWidth = 6;
-            this.CustId.Name = "CustId";
-            // 
-            // CustName
-            // 
-            this.CustName.HeaderText = "Customer name";
-            this.CustName.MinimumWidth = 6;
-            this.CustName.Name = "CustName";
-            // 
-            // CustEmail
-            // 
-            this.CustEmail.HeaderText = "Customer Email";
-            this.CustEmail.MinimumWidth = 6;
-            this.CustEmail.Name = "CustEmail";
-            // 
-            // CustPhone
-            // 
-            this.CustPhone.HeaderText = "Customer Phone";
-            this.CustPhone.MinimumWidth = 6;
-            this.CustPhone.Name = "CustPhone";
             // 
             // FormOrders
             // 
@@ -423,17 +307,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(1012, 623);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tlp1);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormOrders";
             this.Text = "X";
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.FormOrders_Load);
+            this.tlp1.ResumeLayout(false);
+            this.tlp2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGVProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVCustomer)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DTGOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVOrder)).EndInit();
             this.tlp4.ResumeLayout(false);
             this.tlp4.PerformLayout();
             this.ResumeLayout(false);
@@ -442,23 +327,12 @@
 
         #endregion
 
-        private TableLayoutPanel tableLayoutPanel1;
-        private TableLayoutPanel tableLayoutPanel2;
+        private TableLayoutPanel tlp1;
+        private TableLayoutPanel tlp2;
         private DataGridView DGVCustomer;
         private DataGridView DGVProduct;
-        private DataGridViewTextBoxColumn ProductId;
-        private DataGridViewTextBoxColumn ProductName;
-        private DataGridViewTextBoxColumn ProductQuantity;
-        private DataGridViewTextBoxColumn ProductPrice;
-        private DataGridViewTextBoxColumn ProdDesc;
-        private DataGridViewTextBoxColumn ProductCategorie;
         private TableLayoutPanel tableLayoutPanel3;
-        private DataGridView DTGOrder;
-        private DataGridViewTextBoxColumn OrderId;
-        private DataGridViewTextBoxColumn Product;
-        private DataGridViewTextBoxColumn Quantity;
-        private DataGridViewTextBoxColumn Unitprice;
-        private DataGridViewTextBoxColumn TotPrice;
+        private DataGridView DGVOrder;
         private TableLayoutPanel tlp4;
         private Label lbl3;
         private Label label1;
@@ -470,9 +344,5 @@
         private Button btnInsertOrder;
         private Label label3;
         private TextBox txtOrderQuantity;
-        private DataGridViewTextBoxColumn CustId;
-        private DataGridViewTextBoxColumn CustName;
-        private DataGridViewTextBoxColumn CustEmail;
-        private DataGridViewTextBoxColumn CustPhone;
     }
 }

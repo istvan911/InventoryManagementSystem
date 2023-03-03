@@ -18,7 +18,7 @@ namespace InventoryManagementSystem.Classes
         [Required] public int ProductQuantity { get; set; }
         [Required] public int ProductPrice { get; set; }
         [Required] public string ProductDescription { get; set; }
-        [Required] public string CategoryName { get; set; }
+        [Required] public string ProductCategory { get; set; }
 
     }
 }

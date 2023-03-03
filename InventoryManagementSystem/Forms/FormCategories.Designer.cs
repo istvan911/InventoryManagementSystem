@@ -30,10 +30,8 @@
         {
             this.tlp1 = new System.Windows.Forms.TableLayoutPanel();
             this.DGVCategories = new System.Windows.Forms.DataGridView();
-            this.CategoryId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tlp2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlp3 = new System.Windows.Forms.TableLayoutPanel();
             this.txtcategory = new System.Windows.Forms.TextBox();
             this.lbl3 = new System.Windows.Forms.Label();
             this.tlp4 = new System.Windows.Forms.TableLayoutPanel();
@@ -44,7 +42,7 @@
             this.tlp1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVCategories)).BeginInit();
             this.tlp2.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tlp3.SuspendLayout();
             this.tlp4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,68 +56,55 @@
             this.tlp1.Location = new System.Drawing.Point(0, 0);
             this.tlp1.Name = "tlp1";
             this.tlp1.RowCount = 2;
-            this.tlp1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tlp1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlp1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlp1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.tlp1.Size = new System.Drawing.Size(1012, 623);
             this.tlp1.TabIndex = 0;
             // 
             // DGVCategories
             // 
             this.DGVCategories.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGVCategories.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(70)))));
             this.DGVCategories.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVCategories.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CategoryId,
-            this.CategoryName});
             this.DGVCategories.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DGVCategories.GridColor = System.Drawing.Color.White;
             this.DGVCategories.Location = new System.Drawing.Point(3, 3);
             this.DGVCategories.Name = "DGVCategories";
             this.DGVCategories.RowHeadersWidth = 51;
             this.DGVCategories.RowTemplate.Height = 29;
-            this.DGVCategories.Size = new System.Drawing.Size(1006, 492);
+            this.DGVCategories.Size = new System.Drawing.Size(1006, 527);
             this.DGVCategories.TabIndex = 18;
-            // 
-            // CategoryId
-            // 
-            this.CategoryId.HeaderText = "Category id";
-            this.CategoryId.MinimumWidth = 475;
-            this.CategoryId.Name = "CategoryId";
-            // 
-            // CategoryName
-            // 
-            this.CategoryName.HeaderText = "Category name";
-            this.CategoryName.MinimumWidth = 475;
-            this.CategoryName.Name = "CategoryName";
+            this.DGVCategories.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVCategories_CellClick);
             // 
             // tlp2
             // 
             this.tlp2.ColumnCount = 1;
             this.tlp2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlp2.Controls.Add(this.tableLayoutPanel1, 0, 0);
+            this.tlp2.Controls.Add(this.tlp3, 0, 0);
             this.tlp2.Controls.Add(this.tlp4, 0, 1);
             this.tlp2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlp2.Location = new System.Drawing.Point(3, 501);
+            this.tlp2.Location = new System.Drawing.Point(3, 536);
             this.tlp2.Name = "tlp2";
             this.tlp2.RowCount = 2;
             this.tlp2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlp2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlp2.Size = new System.Drawing.Size(1006, 119);
+            this.tlp2.Size = new System.Drawing.Size(1006, 84);
             this.tlp2.TabIndex = 19;
             // 
-            // tableLayoutPanel1
+            // tlp3
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel1.Controls.Add(this.txtcategory, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lbl3, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1000, 53);
-            this.tableLayoutPanel1.TabIndex = 23;
+            this.tlp3.ColumnCount = 2;
+            this.tlp3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlp3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tlp3.Controls.Add(this.txtcategory, 0, 0);
+            this.tlp3.Controls.Add(this.lbl3, 0, 0);
+            this.tlp3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlp3.Location = new System.Drawing.Point(3, 3);
+            this.tlp3.Name = "tlp3";
+            this.tlp3.RowCount = 1;
+            this.tlp3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tlp3.Size = new System.Drawing.Size(1000, 36);
+            this.tlp3.TabIndex = 23;
             // 
             // txtcategory
             // 
@@ -131,7 +116,7 @@
             this.txtcategory.MaxLength = 32764;
             this.txtcategory.Multiline = true;
             this.txtcategory.Name = "txtcategory";
-            this.txtcategory.Size = new System.Drawing.Size(794, 47);
+            this.txtcategory.Size = new System.Drawing.Size(794, 30);
             this.txtcategory.TabIndex = 81;
             // 
             // lbl3
@@ -142,7 +127,7 @@
             this.lbl3.ForeColor = System.Drawing.Color.White;
             this.lbl3.Location = new System.Drawing.Point(3, 0);
             this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(194, 53);
+            this.lbl3.Size = new System.Drawing.Size(194, 36);
             this.lbl3.TabIndex = 74;
             this.lbl3.Text = "Category Name:";
             this.lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -159,11 +144,11 @@
             this.tlp4.Controls.Add(this.btnNew, 0, 0);
             this.tlp4.Controls.Add(this.btnUpdate, 0, 0);
             this.tlp4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlp4.Location = new System.Drawing.Point(3, 62);
+            this.tlp4.Location = new System.Drawing.Point(3, 45);
             this.tlp4.Name = "tlp4";
             this.tlp4.RowCount = 1;
             this.tlp4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlp4.Size = new System.Drawing.Size(1000, 54);
+            this.tlp4.Size = new System.Drawing.Size(1000, 36);
             this.tlp4.TabIndex = 21;
             // 
             // btnDelete
@@ -174,10 +159,11 @@
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Location = new System.Drawing.Point(503, 3);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(244, 48);
+            this.btnDelete.Size = new System.Drawing.Size(244, 30);
             this.btnDelete.TabIndex = 82;
             this.btnDelete.Text = "Delete Category";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnDeleteFields
             // 
@@ -187,10 +173,11 @@
             this.btnDeleteFields.ForeColor = System.Drawing.Color.White;
             this.btnDeleteFields.Location = new System.Drawing.Point(753, 3);
             this.btnDeleteFields.Name = "btnDeleteFields";
-            this.btnDeleteFields.Size = new System.Drawing.Size(244, 48);
+            this.btnDeleteFields.Size = new System.Drawing.Size(244, 30);
             this.btnDeleteFields.TabIndex = 81;
             this.btnDeleteFields.Text = "Delete fields";
             this.btnDeleteFields.UseVisualStyleBackColor = true;
+            this.btnDeleteFields.Click += new System.EventHandler(this.btnDeleteFields_Click);
             // 
             // btnNew
             // 
@@ -200,7 +187,7 @@
             this.btnNew.ForeColor = System.Drawing.Color.White;
             this.btnNew.Location = new System.Drawing.Point(3, 3);
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(244, 48);
+            this.btnNew.Size = new System.Drawing.Size(244, 30);
             this.btnNew.TabIndex = 80;
             this.btnNew.Text = "New category";
             this.btnNew.UseVisualStyleBackColor = true;
@@ -214,10 +201,11 @@
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
             this.btnUpdate.Location = new System.Drawing.Point(253, 3);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(244, 48);
+            this.btnUpdate.Size = new System.Drawing.Size(244, 30);
             this.btnUpdate.TabIndex = 70;
             this.btnUpdate.Text = "Update category";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // FormCategories
             // 
@@ -230,11 +218,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCategories";
             this.Text = "FormProducts";
+            this.Load += new System.EventHandler(this.FormCategories_Load);
             this.tlp1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGVCategories)).EndInit();
             this.tlp2.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.tlp3.ResumeLayout(false);
+            this.tlp3.PerformLayout();
             this.tlp4.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -250,10 +239,8 @@
         private Button btnDeleteFields;
         private Button btnNew;
         private Button btnUpdate;
-        private TableLayoutPanel tableLayoutPanel1;
+        private TableLayoutPanel tlp3;
         private Label lbl3;
         private TextBox txtcategory;
-        private DataGridViewTextBoxColumn CategoryId;
-        private DataGridViewTextBoxColumn CategoryName;
     }
 }
