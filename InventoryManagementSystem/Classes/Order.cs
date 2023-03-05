@@ -14,6 +14,7 @@ namespace InventoryManagementSystem.Classes
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int OrderID { get; set; }
+        [Required] public int ProductID { get; set; }
         [Required] public string ProductName { get; set; }
         [Required] public int Quantity { get; set; }
         [Required] public int UnitPrice { get; set; }
