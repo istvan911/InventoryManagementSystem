@@ -364,6 +364,7 @@
             this.btnViewOrders.TabIndex = 106;
             this.btnViewOrders.Text = "View Orders";
             this.btnViewOrders.UseVisualStyleBackColor = true;
+            this.btnViewOrders.Click += new System.EventHandler(this.btnViewOrders_Click_1);
             // 
             // FormOrders
             // 

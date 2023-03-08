@@ -131,6 +131,11 @@ namespace InventoryManagementSystem.Forms
 
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void iconHide_Click(object sender, EventArgs e)
         {
             if (hided)

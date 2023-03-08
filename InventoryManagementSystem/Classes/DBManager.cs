@@ -32,6 +32,9 @@ namespace InventoryManagementSystem.Manager
             FormUsers FU = new FormUsers();
             FU.SaveEvent += this.ABmentesHandler;
 
+            FormOrderDGV FOR = new FormOrderDGV();
+            FOR.SaveEvent += this.ABmentesHandler;
+
         }
     }
 }

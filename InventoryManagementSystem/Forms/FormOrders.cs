@@ -93,6 +93,12 @@ namespace InventoryManagementSystem.Forms
 
         }
 
+        private void btnViewOrders_Click_1(object sender, EventArgs e)
+        {
+            FormOrderDGV FDGV = new FormOrderDGV();
+            FDGV.Show();
+        }
+
         private void DGVProduct_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             prod = Convert.ToInt32(DGVProduct.Rows[DGVProduct.CurrentCell.RowIndex].Cells[0].Value);
