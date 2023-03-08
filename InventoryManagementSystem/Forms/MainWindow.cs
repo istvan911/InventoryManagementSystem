@@ -92,12 +92,6 @@ namespace InventoryManagementSystem
             OpenChildForm(new Forms.FormOrders());
         }
 
-        private void btnSettings_Click(object sender, EventArgs e)
-        {
-            Button_Enable((IconButton)sender, Color.FromArgb(168, 12, 21));
-            OpenChildForm(new Forms.FormSettings());
-        }
-
         private void iconexit_Click(object sender, EventArgs e)
         {
             Application.Exit();

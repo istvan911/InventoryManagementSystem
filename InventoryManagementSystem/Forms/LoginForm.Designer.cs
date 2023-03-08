@@ -35,8 +35,6 @@
             this.adatcheck = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -140,30 +138,6 @@
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.Login_Click);
             // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(182, 541);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(128, 20);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "Register one now!";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(147, 521);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(210, 20);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "Don\'t have a user account yet?";
-            // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -243,8 +217,6 @@
             this.Controls.Add(this.adatcheck);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPassword);
@@ -274,8 +246,6 @@
         private CheckBox adatcheck;
         private Label label3;
         private Button btnLogin;
-        private Label label6;
-        private Label label5;
         private Label label2;
         private Label label1;
         private TextBox txtPassword;

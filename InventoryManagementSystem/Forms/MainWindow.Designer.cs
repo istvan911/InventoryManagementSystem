@@ -33,7 +33,6 @@
             this.lblUser = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnSettings = new FontAwesome.Sharp.IconButton();
             this.btnOrders = new FontAwesome.Sharp.IconButton();
             this.btnCostumers = new FontAwesome.Sharp.IconButton();
             this.btnCategories = new FontAwesome.Sharp.IconButton();
@@ -62,7 +61,6 @@
             this.panelMenu.Controls.Add(this.lblUser);
             this.panelMenu.Controls.Add(this.label6);
             this.panelMenu.Controls.Add(this.label3);
-            this.panelMenu.Controls.Add(this.btnSettings);
             this.panelMenu.Controls.Add(this.btnOrders);
             this.panelMenu.Controls.Add(this.btnCostumers);
             this.panelMenu.Controls.Add(this.btnCategories);
@@ -85,7 +83,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(250, 35);
             this.label5.TabIndex = 23;
-            this.label5.Text = "Felhasználói fiók:";
+            this.label5.Text = "Account:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblUser
@@ -119,29 +117,8 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(250, 48);
             this.label3.TabIndex = 20;
-            this.label3.Text = "Istvan\'s Production\r\nCopyrigth © 2022\r\n";
+            this.label3.Text = "Istvan\'s Production\r\nCopyrigth © 2023";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnSettings
-            // 
-            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSettings.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(70)))));
-            this.btnSettings.FlatAppearance.BorderSize = 0;
-            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSettings.IconChar = FontAwesome.Sharp.IconChar.Gear;
-            this.btnSettings.IconColor = System.Drawing.Color.White;
-            this.btnSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(0, 425);
-            this.btnSettings.MinimumSize = new System.Drawing.Size(150, 75);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(250, 75);
-            this.btnSettings.TabIndex = 19;
-            this.btnSettings.Text = "Settings";
-            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSettings.UseVisualStyleBackColor = true;
-            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnOrders
             // 
@@ -388,7 +365,6 @@
         #endregion
 
         private Panel panelMenu;
-        private FontAwesome.Sharp.IconButton btnSettings;
         private FontAwesome.Sharp.IconButton btnOrders;
         private FontAwesome.Sharp.IconButton btnCostumers;
         private FontAwesome.Sharp.IconButton btnCategories;
