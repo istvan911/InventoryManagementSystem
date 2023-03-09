@@ -103,6 +103,14 @@ namespace InventoryManagementSystem.Forms
         {
             prod = Convert.ToInt32(DGVProduct.Rows[DGVProduct.CurrentCell.RowIndex].Cells[0].Value);
             txtProdPrice.Text = AB.Products.SingleOrDefault(x => x.ProductID == prod).ProductPrice.ToString();
+            if (txtOrderQuantity.Text != string.Empty)
+            {
+                txtTotalPrice.Text = (Convert.ToInt32(txtOrderQuantity.Text) * Convert.ToInt32(txtProdPrice.Text)).ToString();
+            }
+            else
+            {
+                txtTotalPrice.Text = string.Empty;
+            }
         }
     }
 }
