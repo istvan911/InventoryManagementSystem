@@ -56,6 +56,7 @@
             // 
             // panelMove
             // 
+            this.panelMove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(80)))));
             this.panelMove.Controls.Add(this.iconexit);
             this.panelMove.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMove.Location = new System.Drawing.Point(0, 0);
@@ -100,10 +101,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(60)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(90)))));
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.DGVOrder);
             this.Controls.Add(this.panelMove);
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormOrderDGV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

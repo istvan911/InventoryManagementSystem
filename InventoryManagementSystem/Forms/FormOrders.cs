@@ -47,7 +47,8 @@ namespace InventoryManagementSystem.Forms
 
         private void btnViewOrders_Click(object sender, EventArgs e)
         {
-
+            FormOrderDGV FDGV = new FormOrderDGV();
+            FDGV.Show();
         }
 
         private void DGVCustomer_CellClick(object sender, DataGridViewCellEventArgs e)
