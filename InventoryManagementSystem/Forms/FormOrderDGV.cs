@@ -33,6 +33,7 @@ namespace InventoryManagementSystem.Forms
         {
             DGVOrder.DataSource = AB.Orders.ToList();
             DGVOrder.ForeColor = Color.Black;
+            iconexit.BringToFront();
         }
 
         private void panelMove_MouseDown(object sender, MouseEventArgs e)
@@ -54,9 +55,9 @@ namespace InventoryManagementSystem.Forms
         private void printDoc_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             var ord = AB.Orders.SingleOrDefault(x => x.OrderID == oId);
-            e.Graphics.DrawString("Order summary", new Font("Segoe UI", 25, FontStyle.Bold), Brushes.Red,new PointF(270,30));
+            e.Graphics.DrawString("Order summary", new Font("Segoe UI", 25, FontStyle.Bold), Brushes.Red, new PointF(270, 30));
             e.Graphics.DrawString("Order id: " + ord.OrderID, new Font("Segoe UI", 15, FontStyle.Regular), Brushes.Black, new PointF(20, 80));
-            e.Graphics.DrawString("Product id: " + ord.ProductID, new Font("Segoe UI", 15, FontStyle.Regular), Brushes.Black, new PointF(20,110));
+            e.Graphics.DrawString("Product id: " + ord.ProductID, new Font("Segoe UI", 15, FontStyle.Regular), Brushes.Black, new PointF(20, 110));
             e.Graphics.DrawString("Product name: " + ord.ProductName, new Font("Segoe UI", 15, FontStyle.Regular), Brushes.Black, new PointF(20, 140));
             e.Graphics.DrawString("Quantity: " + ord.Quantity, new Font("Segoe UI", 15, FontStyle.Regular), Brushes.Black, new PointF(20, 170));
             e.Graphics.DrawString("Unit price: " + ord.UnitPrice, new Font("Segoe UI", 15, FontStyle.Regular), Brushes.Black, new PointF(20, 200));
@@ -78,6 +79,16 @@ namespace InventoryManagementSystem.Forms
         private void panelMove_MouseUp(object sender, MouseEventArgs e)
         {
             mov = 0;
+        }
+
+        private void iconexit_MouseEnter(object sender, EventArgs e)
+        {
+            iconexit.ForeColor = Color.Red;
+        }
+
+        private void iconexit_MouseLeave(object sender, EventArgs e)
+        {
+            iconexit.ForeColor = Color.White;
         }
     }
 }

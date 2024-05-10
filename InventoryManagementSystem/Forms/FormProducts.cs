@@ -19,7 +19,7 @@ namespace InventoryManagementSystem.Forms
         public delegate void ABmentesDelegate(string tablanev);
         public event ABmentesDelegate SaveEvent;
         private int prodId;
-            
+
         public FormProducts()
         {
             InitializeComponent();
@@ -37,10 +37,11 @@ namespace InventoryManagementSystem.Forms
                 cmbProdCatSearch.Items.Add(i.CategoryName.ToString());
                 cmbProdCat.Items.Add(i.CategoryName.ToString());
             }
-            cmbProdCatSearch.SelectedIndex = 0;
-            cmbProdCat.SelectedIndex = 0;
+            cmbProdCatSearch.Text = "Category...";
+            cmbProdCat.Text = "Category...";
             DGVProduct.ForeColor = Color.Black;
             DGV_Frissit();
+
         }
         private void DeleteFields()
         {
@@ -55,7 +56,7 @@ namespace InventoryManagementSystem.Forms
         private void btnNew_Click(object sender, EventArgs e)
         {
             var lst = AB.Products.ToList();
-            if(lst.Count(x=>x.ProductName.Equals(txtProdName.Text)) != 0 && (lst.Count(x=>x.ProductCategory.Equals(cmbProdCat.Text)) != 0 && cmbProdCat.Text == "Category...")&& lst.Count(x=>x.ProductDescription.Equals(txtProdDesc.Text)) != 0)
+            if (lst.Count(x => x.ProductName.Equals(txtProdName.Text)) != 0 && (lst.Count(x => x.ProductCategory.Equals(cmbProdCat.Text)) != 0 && cmbProdCat.Text == "Category...") && lst.Count(x => x.ProductDescription.Equals(txtProdDesc.Text)) != 0)
             {
                 MessageBox.Show("Az alábbi termék már szerepel az adatbázisban!");
             }
@@ -153,6 +154,8 @@ namespace InventoryManagementSystem.Forms
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             DGV_Frissit();
+            cmbProdCatSearch.Text = "Category...";
+            cmbProdCat.Text = "Category...";
         }
     }
 }

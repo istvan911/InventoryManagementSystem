@@ -15,8 +15,8 @@ namespace InventoryManagementSystem.Forms
     {
         Manager.DBManager UjDbManager;
         Adatbazis AB = new Adatbazis();
-        private bool hided = true,note = false;
-        int mov,movX,movY;
+        private bool hided = true, note = false;
+        int mov, movX, movY;
         public LoginForm()
         {
             InitializeComponent();
@@ -34,7 +34,7 @@ namespace InventoryManagementSystem.Forms
         private void Login_Click(object sender, EventArgs e)
         {
             var lst = AB.Users.ToList();
-            if(lst.Count(x=>x.Username == txtUsername.Text) == 1 && lst.Count(x => x.Password == txtPassword.Text) == 1)
+            if (lst.Count(x => x.Username == txtUsername.Text) == 1 && lst.Count(x => x.Password == txtPassword.Text) == 1)
             {
                 Form Main = new MainWindow();
                 this.Hide();
@@ -50,7 +50,7 @@ namespace InventoryManagementSystem.Forms
                     Properties.UserSettings.Default.Password = "NA";
                 }
                 Properties.UserSettings.Default.Save();
-                
+
             }
             else
             {
@@ -105,7 +105,7 @@ namespace InventoryManagementSystem.Forms
 
         private void adatcheck_CheckedChanged(object sender, EventArgs e)
         {
-            if(adatcheck.Checked)
+            if (adatcheck.Checked)
             {
                 note = true;
             }
@@ -117,7 +117,7 @@ namespace InventoryManagementSystem.Forms
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-            if(Properties.UserSettings.Default.Password == "NA")
+            if (Properties.UserSettings.Default.Password == "NA")
             {
                 txtUsername.Text = "Username";
                 txtPassword.Text = "Password";
@@ -145,12 +145,12 @@ namespace InventoryManagementSystem.Forms
                 hided = false;
             }
 
-            else 
+            else
             {
                 iconHide.IconChar = FontAwesome.Sharp.IconChar.Eye;
                 txtPassword.UseSystemPasswordChar = true;
                 hided = true;
-            } 
+            }
         }
 
         private void panel1_MouseMove(object sender, MouseEventArgs e)

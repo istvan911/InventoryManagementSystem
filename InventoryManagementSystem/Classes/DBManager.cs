@@ -1,4 +1,4 @@
-﻿using InventoryManagementSystem.Classes;
+﻿    using InventoryManagementSystem.Classes;
 using InventoryManagementSystem.Forms;
 using System;
 using System.Collections.Generic;
@@ -10,6 +10,7 @@ namespace InventoryManagementSystem.Manager
 {
     internal class DBManager
     {
+        // Comment
         Adatbazis AB = new Adatbazis();
         public void ABmentesHandler(String Tablanev)
         {

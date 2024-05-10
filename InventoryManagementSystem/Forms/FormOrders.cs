@@ -60,7 +60,7 @@ namespace InventoryManagementSystem.Forms
 
         private void txtOrderQuantity_TextChanged(object sender, EventArgs e)
         {
-            if(txtOrderQuantity.Text != string.Empty)
+            if (txtOrderQuantity.Text != string.Empty)
             {
                 txtTotalPrice.Text = (Convert.ToInt32(txtOrderQuantity.Text) * Convert.ToInt32(txtProdPrice.Text)).ToString();
             }
@@ -69,7 +69,7 @@ namespace InventoryManagementSystem.Forms
                 txtTotalPrice.Text = string.Empty;
             }
         }
-
+        /* Új rendelés hozzáadása a rendelések adatbázishoz*/
         private void btnInsertOrder_Click_1(object sender, EventArgs e)
         {
             if (cust >= 0 && prod >= 0 && !txtOrderQuantity.Text.Equals(string.Empty))
@@ -99,7 +99,7 @@ namespace InventoryManagementSystem.Forms
             FormOrderDGV FDGV = new FormOrderDGV();
             FDGV.Show();
         }
-
+        /*Cellaelem kijelölése kattintással és értékek másolása  a textboxokba*/
         private void DGVProduct_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             prod = Convert.ToInt32(DGVProduct.Rows[DGVProduct.CurrentCell.RowIndex].Cells[0].Value);

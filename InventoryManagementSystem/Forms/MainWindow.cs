@@ -60,6 +60,7 @@ namespace InventoryManagementSystem
         private void MainWindow_Load(object sender, EventArgs e)
         {
             lblUser.Text = Properties.UserSettings.Default.Username.ToString();
+            btnUsers.PerformClick();
         }
 
         private void btnUsers_Click(object sender, EventArgs e)
