@@ -10,7 +10,7 @@ namespace InventoryManagementSystem.Manager
 {
     internal class DBManager
     {
-        // Comment
+        // Comment 1
         Adatbazis AB = new Adatbazis();
         public void ABmentesHandler(String Tablanev)
         {
